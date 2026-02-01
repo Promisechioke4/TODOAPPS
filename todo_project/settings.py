@@ -27,8 +27,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     "todoapp-vfq2.onrender.com",
-    "localhost",
-    "127.0.0.1",
 ]
 
 

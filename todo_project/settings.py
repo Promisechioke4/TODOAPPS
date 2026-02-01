@@ -25,10 +25,11 @@ SECRET_KEY = 'django-insecure-+h5s(_d_#@-s^c^*pxyr3m5rak^fr@d69=^qd0+zu&!&!s5$v^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [
-    "todoapp-vfq2.onrender.com",
-]
+ALLOWED_HOSTS = ["*"]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://todoapp-vfq2.onrender.com",
+]
 
 
 # Application definition
@@ -120,7 +121,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
 # Default primary key field type
